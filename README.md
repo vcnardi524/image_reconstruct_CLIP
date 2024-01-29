@@ -1,13 +1,15 @@
 
 TO DO 
 
-1. data loaders and fomratting 
+1. dataloaders and formatting 
 
 2. Clip encoding model
 
 3. A way to analyze results and the model
 
 4. Main program and file stucture
+
+5. Test w/out RELU then try with the RELU
 
 
 
@@ -24,4 +26,7 @@ Dimensions from the paper:
         W element of R(N x K)
         B element of R(N)
 
+Resrouces:
+- https://arxiv.org/abs/2306.03089
+- 
     
