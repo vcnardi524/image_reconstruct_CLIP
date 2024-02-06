@@ -1,10 +1,3 @@
-
-
-RO='nsdgeneral' # Choose ROI from file between V1, V2, V3, V4 or nsdgeneral
-SUBJ = '01'
-
-
-
 FMRI_DIR='/content/drive/MyDrive/fMRI-reconstruction-NSD/raw_fsaverage_Subj01'
 ROI_DIR='/content/drive/MyDrive/fMRI-reconstruction-NSD/ROI'
 OUT_DIR='/content/drive/MyDrive/fMRI-reconstruction-NSD/subj01_nsdgeneral_before_zscore' 
@@ -18,6 +11,9 @@ TRIAL_PER_SESS = 750
 
 MAX_IDX = TRIAL_PER_SESS * SESS_NUM
 device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+RO='nsdgeneral' # Choose ROI from file between V1, V2, V3, V4 or nsdgeneral
+SUBJ = '01'
 
 CREATE_DATASET=False
 CREATE_LOADERS=False
@@ -53,5 +49,4 @@ if __name__=='__main__':
 
     if CREATE_DATASET and CREATE_LOADERS:
       train_set, val_set, train_loader, val_loader = get_dataloader(dataset, batch_size=32)
-
-    
+      
