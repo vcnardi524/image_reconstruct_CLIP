@@ -29,4 +29,5 @@ Dimensions from the paper:
 Resrouces:
 - https://arxiv.org/abs/2306.03089
 - NSD: https://cvnlab.slite.page/p/CT9Fwl4_hc/NSD-Data-Manual
+- https://pytorch.org/tutorials/beginner/basics/intro.html
     
